@@ -1,6 +1,6 @@
 # webdev-html-notes
 
-- Introductie
+Korte notities gemaakt tijdens de workshop.
 
 
 ## Introductie
@@ -31,6 +31,25 @@ Voorbeeld Jasper > Zie folder demo
 - GEEN INLINE STYLING! :angry:
 - Gebruik geen float (alleen om plaatjes uitlijnen) :angry:
 - Gebruik GEEN tables voor layout, alleen als je een tabel wil tekenen.  :angry:
+
+## Flexbox :sunglasses:
+
+- Voor het op maken van lyouts
+- flexcontainers = fancy
+- oefenen met > https://flexboxfroggy.com/
+- Eventueel combineren met [Bootstrap](https://getbootstrap.com/)
+- Het kan zijn dat dingen niet passe, check dan even de boxmodel in de devtools van je browser hoe groot items 'echt' zijn. 
+
+
+![Alt text](images/boxmodel.png) 
+
+*Img 1. Boxmodel*
+
+
+
+
+
+
 
 
 
