@@ -1,0 +1,64 @@
+body {
+    background-color: #eee;
+}
+
+.container>* {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+article {
+    grid-area: article;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+
+}
+
+.grid-layout {
+    display: grid;
+    /* Ik wil 3 gelijke columns */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section section aside"
+        "article article aside"
+        "footer footer footer";
+    grid-gap: 10px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/* bonus! */
+.container {
+    max-width: 800px;
+    margin-left:auto; /* Magic! */
+    margin-right:auto; /* Magic! */
+}
+
+article h1, section h1, aside h1 {
+    margin-top: 0;
+}
+
+  
