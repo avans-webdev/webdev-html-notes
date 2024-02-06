@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding:5px;
+        }
+
+        .container {
+            width:100%;
+            overflow: hidden;
+            border:1px solid red;
+        }
+
+        .child-container {
+           border:1px solid blue;
+            display: inline-flex;
+        }
+
+        ul {
+
+            border:1px solid green;
+            list-style: none;
+            padding:0; margin:0;
+            display: inline-flex;
+            flex-direction: row;
+            animation: imageslider 10s infinite linear;
+            
+        }
+
+        li {
+            border:1px solid black;
+            padding:10px;
+            margin: 10px;
+        }
+
+        @keyframes imageslider {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child-container">
+
+            <ul>
+                <!-- Render 100 LIs with random words -->
+                <li>Image 1</li>
+                <li>Image 2</li>
+                <li>Image 3</li>
+                <li>Image 4</li>
+                <li>Image 5</li>
+                <li>Image 6</li>
+                <li>Image 7</li>
+            </ul>
+            <!-- MIRROR TO MIMC ENDLESS -->
+            <ul>
+                <!-- Render 100 LIs with random words -->
+                <li>Image 1</li>
+                <li>Image 2</li>
+                <li>Image 3</li>
+                <li>Image 4</li>
+                <li>Image 5</li>
+                <li>Image 6</li>
+                <li>Image 7</li>
+            </ul>
+
+        </div>
+    </div>
+    
+</body>
+</html>

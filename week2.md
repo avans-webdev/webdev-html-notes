@@ -16,8 +16,7 @@ Centraal: 30m
 - animaties & keyframes
 - responsive websites
 
-PAUZE
-
+PAUZE 30m
 
 - Eindopdracht
 - Dropdownmenu
