@@ -31,13 +31,17 @@ div.menu-container {
     left: 0;
     top:100%;
     overflow: hidden;
-    visibility: hidden; /** HIER KOM IK OP TERUG **/
+
+    /** Solution for overlap on the body/text part 1**/
+    max-height: 0px;
+    transition: max-height 0.5s;
 }
 
 ul.menu-items {
     background-color:#2e2e2e;
     list-style: none;
     padding:1px; /** HIER KOM IK OP TERUG **/
+
 }
 
 ul.menu-items li {
@@ -51,7 +55,8 @@ ul.menu-items {
 }
 
 nav .hamburger:hover ~ .menu-container {
-    visibility: visible;
+    /** Solution for overlap on the body/text part 2**/
+    max-height: 100vh;
 }
 
 nav .hamburger:hover ~ .menu-container ul.menu-items {
