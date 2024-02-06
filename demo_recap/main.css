@@ -1,0 +1,47 @@
+header {
+    border: 1px solid red;
+}
+
+aside {
+    flex:1;
+    border: 1px solid green;
+}
+
+article {
+    flex:3;
+    border: 1px solid blue;
+    overflow: auto;
+}
+
+footer {
+    border: 1px solid yellow;
+}
+
+main {
+    display:flex;
+    max-width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+}
+
+body {
+    background-color:#eee;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    padding:10px;
+}
+
+ul li img {
+    /* width:100px; */
+}
+

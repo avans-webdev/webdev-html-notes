@@ -1,0 +1,71 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+nav {
+    background-color: darkslategrey;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+nav > * {
+    margin: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding:10px;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li:hover {
+    background-color: darkcyan;
+}
+
+nav ul ul {
+    flex-direction: column;
+}
+
+nav ul li:hover .dropdown ul {
+    transform: translateY(0%);
+    transition: transform 1s;
+}
+
+nav ul .dropdown ul {
+    transform:translateY(-100%);
+    display: inline-block;
+}
+
+
+nav .dropdown {
+    position:absolute;
+    top:100%;
+    left:0;
+    overflow: hidden;
+    border:2px solid red;
+}
+
+nav .dropdown ul {
+    background-color: darkslategrey;
+    width:150%; /* Hier heb ik (nog) geen oplossing voor */
+   
+}
+
+.company {
+    font-size:1.5em;
+    display:inline-block;
+}
