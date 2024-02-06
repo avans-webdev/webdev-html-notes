@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: lightgrey;
+        }
+
+        ul {
+            list-style: none;
+            padding:0; margin:0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            border:1px solid black;
+            padding:10px;
+        }
+
+        button {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            button {
+                display: block;
+            }
+
+            ul {
+                flex-direction: column;
+                display: none;;
+            }
+
+            button:hover + ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Kazen</h1>
+
+    <button>Alle kazen!</button>
+    <ul>
+        <li>Gouda</li>
+        <li>Edammer</li>
+        <li>Leerdammer</li>
+        <li>Emmentaler</li>
+        <li>Maasdam</li>
+    </ul>
+
+</body>
+
+</html>
