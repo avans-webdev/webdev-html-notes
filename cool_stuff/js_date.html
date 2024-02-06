@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script>
-
-        //if between december and february show winter.css
-        //else show summer.css
-
-        let date = new Date();
-        let month = date.getMonth();
-
-        if (month >= 0 && month <= 2) {
-            document.write('<link rel="stylesheet" href="summer.css">');
-
-        } else {
-            document.write('<link rel="stylesheet" href="winter.css">');
-
-        }
-
-    </script>
+   
 </head>
 <body>
+
+    <h1>Het is tijd voor <span id="drank">Chocomel</span></h1>
     
 </body>
 </html>
+
+<script>
+
+    //if between december and february show winter.css
+    //else show summer.css
+
+    let date = new Date();
+    let month = date.getMonth();
+
+    if (month >= 0 && month <= 2) {
+        document.write('<link rel="stylesheet" href="summer.css">');
+        document.getElementById('drank').innerText = "Bier";	
+    } else {
+        document.write('<link rel="stylesheet" href="winter.css">');
+    }
+
+</script>
