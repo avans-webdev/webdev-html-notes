@@ -33,8 +33,8 @@ div.menu-container {
     overflow: hidden;
 
     /** Solution for overlap on the body/text part 1**/
-    max-height: 0px;
-    transition: max-height 0.5s;
+    /* max-height: 0px;
+    transition: max-height 0.5s; */
 }
 
 ul.menu-items {
