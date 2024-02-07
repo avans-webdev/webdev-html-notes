@@ -1,0 +1,9 @@
+# Bossfight
+
+Linkje naar video en gebruikte bronnen:
+
+https://mymedia.avans.nl/media/t/1_em26lh88
+
+- Checkbox hack: 
+  https://codepen.io/thecel/pen/EVeGpB
+- Point event None: https://codepen.io/sean_codes/pen/WdzgdY
